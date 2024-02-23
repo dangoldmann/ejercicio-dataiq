@@ -49,7 +49,7 @@ export default function Home() {
   );
 
   return (
-    <main>
+    <main className="dark:bg-gray-900 transition-colors dark:text-white min-h-screen">
       <Header searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
       {isLoading ? (
         <LoadingSkeleton />
