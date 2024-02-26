@@ -6,7 +6,7 @@ export default function LoadingSkeleton() {
       {Array.from({ length: numberOfSkeletons }, (_, index) => (
         <div
           key={index}
-          className="animate-pulse bg-gray-300 h-[180px] rounded-md"
+          className="animate-pulse bg-gray-300 h-[180px] rounded-md dark:bg-gray-700"
         />
       ))}
     </div>
