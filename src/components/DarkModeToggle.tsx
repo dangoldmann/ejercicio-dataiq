@@ -25,17 +25,19 @@ export default function DarkModeToggle() {
   return (
     <button
       onClick={toggleDarkMode}
-      className={`relative rounded-md p-5 border flex items-center justify-center ${
+      className={`relative rounded-md p-4 sm:p-5 border flex items-center justify-center ${
         darkMode ? "border-yellow-300" : ""
       }`}
     >
       <SunIcon
-        className={`absolute text-yellow-300 h-5 w-5 icon ${
+        className={`absolute text-yellow-300 h-4 w-4 sm:h-5 sm:w-5 icon ${
           darkMode ? "show" : "hide"
         }`}
       />
       <MoonIcon
-        className={`absolute h-5 w-5 icon ${darkMode ? "hide" : "show"}`}
+        className={`absolute h-4 w-4 sm:h-5 sm:w-5 icon ${
+          darkMode ? "hide" : "show"
+        }`}
       />
     </button>
   );
