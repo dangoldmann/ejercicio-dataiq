@@ -6,13 +6,12 @@ import {
   PhoneIcon,
 } from "@heroicons/react/24/solid";
 
-export default function UserCard({
-  user,
-  searchQuery,
-}: {
+interface UserCardProps {
   user: UserData;
   searchQuery: string;
-}) {
+}
+
+export default function UserCard({ user, searchQuery }: UserCardProps) {
   const highlightText = (text: string) => {
     const parts = text.split(new RegExp(`(^${searchQuery})`, "gi"));
 

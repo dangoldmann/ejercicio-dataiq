@@ -1,16 +1,15 @@
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import DarkModeToggle from "./DarkModeToggle";
 
-export default function Header({
-  searchQuery,
-  setSearchQuery,
-}: {
+interface HeaderProps {
   searchQuery: string;
   setSearchQuery: React.Dispatch<React.SetStateAction<string>>;
-}) {
+}
+
+export default function Header({ searchQuery, setSearchQuery }: HeaderProps) {
   return (
-    <header className="flex items-center px-4 sm:px-6 lg:px-12 py-3 transition-colors sm:py-5 shadow-md justify-end min-[450px]:justify-between dark:bg-gray-950 dark:text-white">
-      <h1 className="text-xl sm:text-2xl lg:text-3xl font-medium hidden min-[450px]:block">
+    <header className="flex items-center px-4 sm:px-6 lg:px-12 py-3 transition-colors sm:py-5 shadow-md justify-end min-[520px]:justify-between dark:bg-gray-950 dark:text-white">
+      <h1 className="text-xl sm:text-2xl lg:text-3xl font-medium hidden min-[520px]:block">
         Ejercicio{" "}
         <a
           href="https://dataiq.com.ar/"
