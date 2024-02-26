@@ -19,7 +19,10 @@ export default function UserCard({ user, searchQuery }: UserCardProps) {
       <span>
         {parts.map((part, i) =>
           part.toLowerCase() === searchQuery.toLowerCase() ? (
-            <span key={i} className="bg-yellow-300 dark:bg-orange-600">
+            <span
+              key={i}
+              className="bg-yellow-300 dark:bg-orange-500 dark:text-black"
+            >
               {part}
             </span>
           ) : (
