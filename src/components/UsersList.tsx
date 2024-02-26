@@ -12,7 +12,7 @@ export default function UsersList({ users, searchQuery }: UsersListProps) {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      className="flex flex-col gap-2 h-full py-10 px-6"
+      className="flex flex-col gap-2 h-full py-7 sm:py-10 px-6"
     >
       <h2 className="sm:text-xl ml-2">
         {users.length == 1
